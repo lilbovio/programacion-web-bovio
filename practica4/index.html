@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                Formulario de registro
+            </legend>
+            <label for="">
+                Nombre:
+                <input type="text" name="nombre" id="nombre">
+            </label>
+            <br>
+            <label for="">
+                Email:
+                <input type="email" name="email" id="email">
+            </label>
+            <br>
+            <label for="">
+                Fecha de nacimiento:
+                <input type="date" name="fecha" id="fecha">
+            </label>
+            <br>
+            <label for="">
+                Contraseña:
+                <input type="password" name="password" id="password">
+            </label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Selecciona tus intereses
+            </legend>
+            <label for="">
+                Tecnología
+                <input type="radio" name="intereses" value="tecnologia" id="tecnologia">
+            </label>
+            <br>
+            <label for="">
+                Deporte
+                <input type="radio" name="intereses" value="deporte" id="deporte">
+            </label>
+            <br>
+            <label for="">
+                Música
+                <input type="radio" name="intereses" value="musica" id="musica">
+            </label>
+            <br>
+            <label for="">
+                Arte
+                <input type="radio" name="intereses" value="arte" id="arte">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Selecciona tus hobbies
+            </legend>
+            <label for="">
+                Leer
+                <input type="checkbox" name="hobbies" value="leer" id="leer">
+            </label>
+            <br>
+            <label for="">
+                Viajar
+                <input type="checkbox" name="hobbies" value="viajar" id="viajar">
+            </label>
+            <br>
+            <label for="">
+                Cocinar
+                <input type="checkbox" name="hobbies" value="cocinar" id="cocinar">
+            </label>
+            <br>
+            <label for="">
+                Deportes
+                <input type="checkbox" name="hobbies" value="deportes" id="deportes">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Rango de gaysencia
+            </legend>  
+            <label for="">
+                Q tan gay eres?
+                <input type="range" name="gaysencia" id="gaysencia" min="0" max="100" step="1"> 
+            </label>
+            <br>
+            <label for="">
+                Color favorito
+                <input type="color" name="color" id="color">   
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar" class="button-19">
+    </form>
+
+    <form action="">
+        <legend>
+            Animales
+        </legend>
+        <fieldset>
+            <select name="animales" id="animales">
+                <option value="">Selecciona</option>
+                <option value="1">Gatito</option>
+                <option value="2">Perrito</option>
+                <option value="3">Hamster</option>
+                <option value="4">Pez</option>
+                <option value="5">Tortuga</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                lenguajes de programación
+            </legend>
+            <select name="lenguajes" id="lenguajes">
+                <option value="">Selecciona</option>
+                <optgroup label="lenguajes de frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="typescript">TypeScript</option>
+                </optgroup>
+                <optgroup label="lenguajes de backend">
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="nodejs">NodeJS</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                ciudades
+            </legend>
+            <label for="">
+                Busca un ciudad de jalisco
+                <input type="search" name="ciudad" list="ciudades">
+            </label>
+            <datalist id="ciudades">
+                <option value="Guadalajara"></option>
+                <option value="Zapopan"></option>
+                <option value="Tlaquepaque"></option>
+                <option value="Tonalá"></option>
+                <option value="Puerto Vallarta"></option>
+                <option value="Tepatitlán"></option>
+                <option value="Lagos de Moreno"></option>
+                <option value="Ocotlán"></option>
+                <option value="Ciudad Guzmán"></option>
+                <option value="Colotlán"></option>
+                <option value="Teuchitlan"></option>
+            </datalist>
+            <br>
+            <label for="">
+                Barra de progreso
+            </label>
+            <progress value="50" max="100"></progress>
+            <progress max="100"></progress>
+            <br>
+            <textarea name="textarea" id="textarea" cols="100" rows="10">
+                Escribe aqui tus comentarios
+            </textarea>
+            <br>
+            <input type="text" name="textholder" id="textholder" placeholder="Escribe algo...">
+            <br> 
+            <input type="email" name="correplaceholder" id="correplaceholder" placeholder="Agrefa tu email" required>
+        </fieldset>
+        <button type="submit" class="button-19">
+            Enviar
+        </button>
+    </form>
+
+    <form oninput="multiplicacion()">
+        <legend>
+            Calculadora dinamica con JavaScript
+        </legend>
+        <fieldset>
+            <input type="number" name="num1" id="num1" placeholder="Numero 1">
+            <br>
+            <input type="number" name="num2" id="num2" placeholder="Numero 2">
+            <br>
+            =
+            <output id="resultado" for="num1 num2">Resultado</output>
+    </form>
+    <script>
+        function multiplicacion() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let resultado = document.getElementById("resultado");
+            resultado.value = num1 * num2;
+        }
+    </script>
+</body>
+</html>
