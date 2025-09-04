@@ -9,3 +9,7 @@ no m copies las tareas 😡😡
 ola profe si le pase mi git es porq a lo mejor perdi todas las practicas y las tenia aca subidas jejeje 
 
 HOLA
+
+ya ando en la practica 6 ff papa que rollo hay que robar unos brainroots
+
+# BAI
