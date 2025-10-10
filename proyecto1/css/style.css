@@ -1,0 +1,85 @@
+.cuerpo_page{/* Vamos a quitar todo lo que no siver y poner un tipo de letra distinto*/
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+.fondoLogo{
+    background-color: #f6e9f9;
+}
+
+.logoInicial{
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+
+}
+
+/* !==========================AQUI COMIENZA EL HEADER======================================= */
+
+.header{  /* HEADER */
+    background: url(../assets/img/bg-header.jpg);
+    height: 600px;
+    display: flex;                   /* ! AYUDA A QUE SE FLEXIBLE TODA ESTA SECCION */
+    background-size: cover;             /* Trata de acomodar los elementos*/
+    align-items: center;                    /* ? ALINEANDO VERTICALMETE */
+    justify-content: center;                    /* ALINEANDO HORIZONTALMENTE */
+}
+
+.headerInfo{ /* CAJA DE TODO EL TEXTO INICIAL */
+    width: 700px;
+    text-align: center;     /* Centramos el texto interior de la caja principal del header*/
+}
+
+.marca{ /* ETIQUETA DEL TITULO */
+    font-size: 108px;
+    color: #fff;
+}
+
+.separador{
+    border-bottom: solid;
+    color: rgb(51, 156, 204);
+}
+
+.eslogan{
+    color: #fff;
+}
+
+.botonAction{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgb(51, 156, 204);
+    font-size: 20px;
+    padding: 15px 35px; /* Padding con ancho y alto */
+    border-radius: 5%;
+}
+
+/* !==========================AQUI TERMINA EL HEADER======================================= */
+
+/* ==========================SECCION SIMPLE DISEÑO=========================================*/
+
+.simpleDiseno{
+    background-color: #f6e9f9;
+    padding: 100px;
+}
+
+.contenedorSimpleDiseno{
+    max-width: 1100px;
+    text-align: center;
+    margin: auto;
+}
+
+p{
+    color: #aeaeae;
+}
+
+h2,h3{
+    font-size: 40px;
+    color: #383838;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
