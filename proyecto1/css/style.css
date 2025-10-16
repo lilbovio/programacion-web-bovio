@@ -265,7 +265,7 @@ textarea.input{
     border-radius: 4px;
 }
 
-.redes_sociales img{
+.redes_sociales i{
     display: block;
     width: 36px;
     height: 36px;
@@ -273,8 +273,8 @@ textarea.input{
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.redes_sociales a:hover img,
-.redes_sociales a:focus img{
+.redes_sociales a:hover i,
+.redes_sociales a:focus i{
     transform: scale(1.2);
     filter: drop-shadow(0 6px 10px rgba(0,0,0,0.2));
 }
